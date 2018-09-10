@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.clerk.ClerkController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="800.0" styleClass="mainBackground" stylesheets="@../application.css">
+         <children>
+            <Label fx:id="welcome" layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="599.0" text="Welcome" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="671.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#logOff" prefHeight="50.0" prefWidth="114.0" styleClass="dark-blue" text="Log Off" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+            <Line endX="600.0" layoutX="150.0" layoutY="80.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="80.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label fx:id="accountNumber" alignment="CENTER" layoutX="454.0" layoutY="120.0" prefHeight="50.0" prefWidth="242.0" text="Account number" textAlignment="CENTER" AnchorPane.leftAnchor="454.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance" alignment="CENTER" layoutX="454.0" layoutY="188.0" prefHeight="50.0" prefWidth="242.0" text="Balance available" textAlignment="CENTER" AnchorPane.leftAnchor="454.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="188.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amountW" alignment="CENTER" layoutX="100.0" layoutY="325.0" prefHeight="50.0" prefWidth="242.0" promptText="Amount" styleClass="textField" AnchorPane.leftAnchor="100.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="429.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#withdrawMoney" prefHeight="50.0" prefWidth="242.0" styleClass="dark-blue" text="Withdraw Money" AnchorPane.rightAnchor="100.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="200.0" layoutX="300.0" layoutY="290.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <TextField fx:id="amountD" alignment="CENTER" layoutX="100.0" layoutY="439.0" prefHeight="50.0" prefWidth="242.0" promptText="Amount" styleClass="textField" AnchorPane.leftAnchor="100.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="459.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#depositMoney" prefHeight="50.0" prefWidth="242.0" styleClass="dark-blue" text="Deposit Money" AnchorPane.rightAnchor="100.20000000000005">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="200.0" layoutX="300.0" layoutY="410.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label alignment="CENTER" layoutX="90.0" layoutY="120.0" prefHeight="50.0" prefWidth="242.0" text="Account Number:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="90.0" layoutY="188.0" prefHeight="50.0" prefWidth="242.0" text="Balance Available: " textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
